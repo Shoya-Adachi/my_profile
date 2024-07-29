@@ -1,0 +1,12 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    #ホットリロードを可能にする設定
+    environment:
+      - WATCHPACK_POLLING=true
