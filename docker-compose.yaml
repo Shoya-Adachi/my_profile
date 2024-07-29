@@ -1,6 +1,7 @@
 version: "3"
 services:
   web:
+    image: shoyatoa/dev_myprofile_flont:latest
     build:
       context: .
     volumes:
