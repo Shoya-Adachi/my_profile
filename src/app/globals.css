@@ -109,9 +109,9 @@ a {
 .top {
   background-image: url(../../public/top.png);
   background-repeat: no-repeat;
-  height: 1117px;
+  /* height: 1117px;
   width: 1512px;
-  background-size: contain;
+  background-size: contain; */
 }
 
 .nav_item { 
