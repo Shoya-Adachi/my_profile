@@ -1,7 +1,7 @@
 version: "3"
 services:
   web:
-    image: shoyatoa/dev_myprofile_flont:latest
+    # image: shoyatoa/dev_myprofile_flont:latest
     build:
       context: .
     volumes:
@@ -11,3 +11,4 @@ services:
     #ホットリロードを可能にする設定
     environment:
       - WATCHPACK_POLLING=true
+    entrypoint: ["sh", "-c", "npm install && npm run dev"]
