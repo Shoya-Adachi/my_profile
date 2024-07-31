@@ -178,3 +178,14 @@ a {
   }
 } */
 
+.top {
+  background-image: url(/_next/static/media/top.2cef4607.png);
+  background-repeat: no-repeat;
+  height: 1117px;
+  width: 1512px;
+  background-size: contain;
+}
+
+.nav_item { 
+  font-weight: 800;
+}
