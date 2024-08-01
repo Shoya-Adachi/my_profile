@@ -106,14 +106,28 @@ a {
   }
 } */
 
-.nav-link {
-  font-weight: 800;
-  font-size:xx-large;
-  text-decoration: none;
-  color: white;
-  margin: 0px 80px;
+.common-nav {
+  display: flex;
+  justify-content: center;
 }
 
-.nav-link:hover {
-  color: #B7B7B7
+nav {
+  position:absolute; 
+  top:0;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  font-weight: 800;
+  font-size:32px;
+  color: white;
+  margin: 20px 80px;
+}
+
+nav li:hover {
+  color: #B7B7B7;
 }
