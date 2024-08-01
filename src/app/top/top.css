@@ -1,0 +1,15 @@
+.header-area {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-text {
+    position: absolute;
+    color: white;
+    font-weight: 800;
+    font-size: 256px;
+    text-align: center;
+}

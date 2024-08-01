@@ -106,14 +106,14 @@ a {
   }
 } */
 
-.top {
-  background-image: url(../../public/top.png);
-  background-repeat: no-repeat;
-  /* height: 1117px;
-  width: 1512px;
-  background-size: contain; */
+.nav-link {
+  font-weight: 800;
+  font-size:xx-large;
+  text-decoration: none;
+  color: white;
+  margin: 0px 80px;
 }
 
-.nav_item { 
-  font-weight: 800;
+.nav-link:hover {
+  color: #B7B7B7
 }
