@@ -32,15 +32,21 @@ export default function Page() {
         <div className="top-text animate__animated animate__fadeInDown animate__slower">
           OTA SHOYA
         </div>
-        ss
       </section>
       <section className="profile-area">
         <div className="section-profile-title animate__animated animate__fadeInLeft animate__delay-2s">
           PROFILE
         </div>
         <div className="profile-content">
-          <Image src="/profile_image.png" alt="" width={800} height={800} />
-          <div className="profile-summary">
+          <Image
+            src="/profile_image.png"
+            alt=""
+            width={500}
+            height={500}
+            sizes="(max-width:1500px) 50vw,50vw"
+            className="animate__animated animate__fadeInLeft animate__delay-2s z-n1"
+          />
+          <div className="profile-summary animate__animated animate__fadeInRight animate__delay-2s">
             <div className="name">Ota Shoya</div>
             <ul>
               <li>26 years old</li>
@@ -51,8 +57,10 @@ export default function Page() {
         </div>
       </section>
       <section className="work-area">
-        <div className="section-title">WORK</div>
-        <div className="work-content">
+        <div className="section-title animate__animated animate__fadeInLeft animate__delay-3s">
+          WORK
+        </div>
+        <div className="work-content animate__animated animate__fadeInRight animate__delay-3s">
           {cards.map((card) => {
             return (
               <WorkCard
@@ -66,8 +74,10 @@ export default function Page() {
         </div>
       </section>
       <section className="contact-area">
-        <div className="section-title">CONTACT</div>
-        <div className="form-content">
+        <div className="section-title animate__animated animate__fadeInLeft animate__delay-4s">
+          CONTACT
+        </div>
+        <div className="form-content animate__animated animate__fadeInRight animate__delay-4s">
           <form className="form-group" onSubmit={handleSubmit(onSubmit)}>
             <div>
               <div className="form-label">Name</div>
@@ -77,20 +87,20 @@ export default function Page() {
               <div className="form-label">Company Name</div>
               <input
                 className="form-field"
-                id="companyName"
-                {...register("comanyName")}
+                id="company_name"
+                {...register("company_name")}
               />
             </div>
             <div>
               <div className="form-label">Phone number</div>
               <input
                 className="form-field"
-                id="phoneNumber"
-                {...register("phoneNumber")}
+                id="phone_number"
+                {...register("phone_number")}
               />
             </div>
             <div>
-              <div className="form-label">e-mail</div>
+              <div className="form-label">E-mail</div>
               <input
                 className="form-field"
                 id="e-mail"

@@ -106,15 +106,14 @@ a {
   }
 } */
 
-
 .common-nav {
   display: flex;
   justify-content: center;
 }
 
 nav {
-  position:absolute; 
-  top:0;
+  position: absolute;
+  top: 0;
 }
 
 nav ul {
@@ -124,11 +123,17 @@ nav ul {
 
 nav li {
   font-weight: 800;
-  font-size:32px;
+  font-size: 32px;
   color: white;
   margin: 20px 80px;
 }
 
 nav li:hover {
-  color: #B7B7B7;
+  color: #b7b7b7;
+}
+
+@media (max-width: 1500px) {
+  nav li {
+    font-size: 24px;
+  }
 }

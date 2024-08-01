@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "animate.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="common-nav">
+        <div className="common-nav animate__animated animate__fadeInDown animate__slower">
           <nav>
             <ul>
               <li>PROFILE</li>
