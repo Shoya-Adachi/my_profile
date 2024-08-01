@@ -6,6 +6,7 @@ import "../globals.css";
 import "./top.css";
 import WorkCard from "../components/card";
 import { useForm } from "react-hook-form";
+import "animate.css";
 
 const cards = [
   { title: "未定1", content: "今作成中です", url: "card_image.png" },
@@ -28,10 +29,15 @@ export default function Page() {
           objectFit="cover"
           className="z-n1"
         />
-        <div className="top-text">OTA SHOYA</div>ss
+        <div className="top-text animate__animated animate__fadeInDown animate__slower">
+          OTA SHOYA
+        </div>
+        ss
       </section>
       <section className="profile-area">
-        <div className="section-profile-title">PROFILE</div>
+        <div className="section-profile-title animate__animated animate__fadeInLeft animate__delay-2s">
+          PROFILE
+        </div>
         <div className="profile-content">
           <Image src="/profile_image.png" alt="" width={800} height={800} />
           <div className="profile-summary">
@@ -99,7 +105,9 @@ export default function Page() {
                 {...register("content")}
               />
             </div>
-            <button className="form-button" type="submit">send</button>
+            <button className="form-button" type="submit">
+              send
+            </button>
           </form>
         </div>
       </section>
