@@ -6,17 +6,28 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // BootstrapのCSSをインポー
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import "../globals.css"
+import "./top.css"
 
 export default function Page() {
     return (
-    <div className="top">
-        <Navbar expand="lg" className="bg-body-tertiary justify-content-center">
-            <Nav className="nav_item text-white">
-                <Nav.Link href="">PROFILE</Nav.Link>
-                <Nav.Link href="">WORK</Nav.Link>
-                <Nav.Link href="">CONTACT</Nav.Link>
+    <>
+    <section className="header-area">
+        <Navbar expand="lg" className="justify-content-center position-absolute top-0">
+            <Nav>
+                <Nav.Link href="" className="nav-link">PROFILE</Nav.Link>
+                <Nav.Link href="" className="nav-link">WORK</Nav.Link>
+                <Nav.Link href="" className="nav-link">CONTACT</Nav.Link>
             </Nav>
         </Navbar>
-    </div>
+        <Image
+            src="/top_image.png"
+            alt=""
+            layout="fill"
+            objectFit="cover"
+            className="z-n1"
+        />
+        <div className="top-text">OTA SHOYA</div>s
+    </section>
+    </>
     )
 }
