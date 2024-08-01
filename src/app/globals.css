@@ -106,7 +106,7 @@ a {
   }
 } */
 
-.common-nav {
+.header {
   display: flex;
   justify-content: center;
 }

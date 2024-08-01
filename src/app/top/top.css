@@ -106,6 +106,9 @@
   border-radius: 0.5rem;
 }
 
+.footer {
+}
+
 @media (max-width: 1500px) {
   .top-text {
     font-size: 156px;

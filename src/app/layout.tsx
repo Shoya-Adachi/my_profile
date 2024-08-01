@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import HeaderNav from "./components/header";
 import "./globals.css";
 import "animate.css";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const navgroup = [
+  { label: "PROFILE", url: "" },
+  { label: "WORK", url: "" },
+  { label: "CONTACT", url: "" },
+];
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="common-nav animate__animated animate__fadeInDown animate__slower">
+        <HeaderNav datas={navgroup} />
+        {/* <div className="header animate__animated animate__fadeInDown animate__slower">
           <nav>
             <ul>
               <li>PROFILE</li>
@@ -26,7 +34,7 @@ export default function RootLayout({
               <li>CONTACT</li>
             </ul>
           </nav>
-        </div>
+        </div> */}
         {children}
       </body>
     </html>
