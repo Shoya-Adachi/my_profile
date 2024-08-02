@@ -7,6 +7,9 @@ import "./top.css";
 import WorkCard from "../components/card";
 import { useForm } from "react-hook-form";
 import "animate.css";
+import TextButton from "../components/text_button";
+import { useRouter } from "next/navigation";
+import TextIconButton from "../components/text_icon_button";
 
 const cards = [
   { title: "未定1", content: "今作成中です", url: "card_image.png" },
@@ -16,8 +19,13 @@ const cards = [
 
 export default function Page() {
   const { register, handleSubmit } = useForm();
+  const router = useRouter();
 
   const onSubmit = (data: any) => console.log(data);
+
+  const movePage = (url: string) => {
+    router.push(url);
+  };
 
   return (
     <>
@@ -38,21 +46,18 @@ export default function Page() {
           PROFILE
         </div>
         <div className="profile-content">
-          <Image
-            src="/profile_image.png"
-            alt=""
-            width={500}
-            height={500}
-            objectFit="contain"
-            className="animate__animated animate__fadeInLeft animate__delay-2s z-n1"
-          />
+          <div className="profile-image animate__animated animate__fadeInLeft animate__delay-2s z-n1"></div>
           <div className="profile-summary animate__animated animate__fadeInRight animate__delay-2s">
             <div className="name">Ota Shoya</div>
             <ul>
-              <li>26 years old</li>
               <li>System Engineer</li>
             </ul>
-            <a>See more...</a>
+            <TextIconButton
+              label="See more..."
+              design="profile_btn"
+              imgUrl="/arrow-up-right-square.svg"
+              handleClick={() => movePage("/profile")}
+            />
           </div>
         </div>
       </section>
