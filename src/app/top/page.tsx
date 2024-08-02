@@ -43,7 +43,7 @@ export default function Page() {
             alt=""
             width={500}
             height={500}
-            sizes="(max-width:1500px) 50vw,50vw"
+            objectFit="contain"
             className="animate__animated animate__fadeInLeft animate__delay-2s z-n1"
           />
           <div className="profile-summary animate__animated animate__fadeInRight animate__delay-2s">

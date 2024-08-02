@@ -12,12 +12,14 @@ type HeaderPropsType = {
 
 export default function HeaderNav({ datas }: HeaderPropsType) {
   return (
-    <nav className="header">
-      <ul>
-        {datas.map((data, i) => {
-          return <li key={i}>{data.label}</li>;
-        })}
-      </ul>
-    </nav>
+    <div className="header animate__animated animate__fadeInDown animate__slower">
+      <nav className="header-nav">
+        <ul>
+          {datas.map((data, i) => {
+            return <li key={i}>{data.label}</li>;
+          })}
+        </ul>
+      </nav>
+    </div>
   );
 }
