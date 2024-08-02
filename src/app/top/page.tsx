@@ -54,8 +54,10 @@ export default function Page() {
             </ul>
             <TextIconButton
               label="See more..."
-              design="profile_btn"
-              imgUrl="/arrow-up-right-square.svg"
+              type="button"
+              btnUi="profile_btn"
+              iconUi="profile_btn_icon"
+              imgUrl="/arrow-right-circle.svg"
               handleClick={() => movePage("/profile")}
             />
           </div>
@@ -120,9 +122,13 @@ export default function Page() {
                 {...register("content")}
               />
             </div>
-            <button className="form-button" type="submit">
-              send
-            </button>
+            <TextIconButton
+              label="Send"
+              type="submit"
+              btnUi="form-btn"
+              iconUi="form_btn_icon"
+              imgUrl="/send.svg"
+            />
           </form>
         </div>
       </section>

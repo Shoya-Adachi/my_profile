@@ -1,22 +1,24 @@
-import "../globals.css";
-
 type PropsType = {
   label: string;
-  design: string;
+  type: "submit" | "reset" | "button";
+  btnUi?: string;
+  iconUi?: string;
   imgUrl: string;
-  handleClick: () => void;
+  handleClick?: () => void;
 };
 
 export default function TextIconButton({
   label,
-  design,
+  type,
+  btnUi,
+  iconUi,
   imgUrl,
   handleClick,
 }: PropsType) {
   return (
-    <button type="button" className={design} onClick={handleClick}>
+    <button type={type} className={btnUi} onClick={handleClick}>
       {label}
-      <img src={imgUrl} alt="icon" />
+      <img src={imgUrl} alt="icon" className={iconUi} />
     </button>
   );
 }
